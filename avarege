@@ -1,0 +1,35 @@
+def media(total, avarege):
+    result = total / avarege
+    
+    return result
+
+    
+turma = input('Nome/Número da turma: ')
+matricula = int(input(f'Número de alunos matriculados: '))
+
+range_1 = matricula + 1
+
+
+for count in range(0, range_1): 
+        
+        
+    name = input(f'Digite o nome do aluno que deseja calcular a média: ')
+
+    new = 1
+    nota = 0
+    count = 0
+
+
+    while new != 0:
+        nota1 = int(input(f'Digite uma nova nota: '))
+        nota += nota1
+        count += 1
+        
+        finish = int(input('Digite 1 para informar nova nota e 0 para finalizar. '))
+        new = finish
+        
+        
+
+num2 = media(nota, count)
+
+print(f'A media de {name} é {num2}')
